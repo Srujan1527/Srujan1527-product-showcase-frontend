@@ -13,7 +13,7 @@ export interface Product {
 }
 
 const ProductListPage = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     const getAllProducts = async () => {
