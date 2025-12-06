@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <p className="text-gray-700 font-semibold mt-2">₹{product.price}</p>
 
       {/* Enquiry Button */}
-      <Link to={`/${product.id}/enquire`}>
+      <Link to={`/enquire?productId=${product.id}`}>
         <button className="mt-3 w-full bg-blue-600 text-white py-2 rounded-md text-sm hover:bg-blue-700 transition">
           Enquire
         </button>
