@@ -40,14 +40,14 @@ export default function AdminEnquiriesPage() {
         });
 
         const data = await res.json();
-
+        console.log("data", data.data.rows);
         if (!res.ok) {
           setError(data.message || "Failed to load enquiries");
           setLoading(false);
           return;
         }
 
-        setEnquiries(data.data || []);
+        setEnquiries(data.data.rows || []);
         setLoading(false);
       } catch (err) {
         const msg =
