@@ -3,6 +3,8 @@
 A small full-stack app built as part of a coding assignment.
 
 here is the link https://srujans-ecommerce-app.vercel.app/
+
+
 Stack:
 
 - **Frontend:** React, TypeScript, Vite, Tailwind CSS, React Router
