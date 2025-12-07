@@ -54,7 +54,12 @@ const ProductListPage = () => {
         setLoading(false);
       }
     };
-    fetchProducts();
+
+    const delay = setTimeout(() => {
+      fetchProducts();
+    }, 500);
+
+    return () => clearTimeout(delay);
   }, [page, search]);
 
   return (
