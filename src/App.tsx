@@ -2,8 +2,8 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import EnquiryForm from "./components/EnquiryForm";
-import SignupPage from "./components/signup";
-import LoginPage from "./components/login";
+import SignupPage from "./components/Signup";
+import LoginPage from "./components/Login";
 
 function App() {
   return (
