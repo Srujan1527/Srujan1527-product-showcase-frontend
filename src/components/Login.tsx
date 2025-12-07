@@ -35,7 +35,7 @@ export default function LoginPage() {
       saveAuth(data.token, data.user);
 
       // Redirect based on role
-      if (data.user.is_admin) navigate("/admin/enquiries");
+      if (data.user.is_admin) navigate("/enquiries/admin");
       else navigate("/");
     } catch (err: unknown) {
       const message =
